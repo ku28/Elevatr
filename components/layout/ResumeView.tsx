@@ -38,19 +38,17 @@ const FinalResumeView: React.FC<FinalResumeViewProps> = ({
   }, [params.id]);
 
   const sanitize = (str: string | undefined | null): string =>
-    str?.trim().replace(/\s+/g, "_") || "User_Resume";
+    str?.trim().replace(/\s+/g, "_") || `${formData?.firstName ?? "User"}`;
 
   const handleDownloadPDF = () => {
     const element = document.getElementById("print-area");
     const opt = {
       margin: 0,
       filename: `${sanitize(
-        `${formData?.firstName ?? "User"}_${formData?.lastName ?? ""}_${
-          formData?.jobTitle ?? ""
-        }_Resume.pdf`
+        `${formData?.firstName ?? "User"}_Resume.pdf`
       )}`,
       image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2 },
+      html2canvas: { scale: 3 },
       jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
     };
 

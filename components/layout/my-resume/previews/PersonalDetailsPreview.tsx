@@ -6,7 +6,7 @@ function PersonalDetailsPreview() {
   const { formData } = useFormContext();
 
   return (
-    <div>
+    <div className="mx-8 my-4">
       <h2
         className="font-bold text-xl text-center"
         style={{

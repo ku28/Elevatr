@@ -6,7 +6,7 @@ const SummaryPreview = () => {
   const { formData } = useFormContext();
 
   return (
-    <div>
+    <div className="mx-8">
       <h2
         className="text-left font-bold text-sm mb-2"
         style={{

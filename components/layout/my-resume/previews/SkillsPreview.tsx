@@ -6,39 +6,25 @@ const SkillsPreview = () => {
   const { formData } = useFormContext();
 
   return (
-    <div className="my-6">
+    <div className="my-6 mx-8">
       <h2
-        className="text-left font-bold text-sm mb-2"
-        style={{
-          color: formData?.themeColor || themeColors[0],
-        }}
+      className="text-left font-bold text-sm mb-2"
+      style={{
+        color: formData?.themeColor || themeColors[0],
+      }}
       >
-        Skill{formData?.skills.length > 1 ? "s" : ""}
+      Skill{formData?.skills.length > 1 ? "s" : ""}
       </h2>
       <hr
-        style={{
-          borderColor: formData?.themeColor || themeColors[0],
-        }}
+      style={{
+        borderColor: formData?.themeColor || themeColors[0],
+      }}
       />
 
-      <div className="gap-x-16 max-sm:gap-x-6 max-md:gap-x-10 gap-y-3 my-5">
-        {formData?.skills.map((skill: any, index: number) => (
-          <div
-            key={index}
-            className="grid grid-cols-3 items-center justify-between gap-3"
-          >
-            <h2 className="text-xs">{skill.name}</h2>
-            <div className="h-2 bg-gray-200 w-full rounded-full col-span-2">
-              <div
-                className="h-2 rounded-full"
-                style={{
-                  backgroundColor: formData?.themeColor || themeColors[0],
-                  width: (skill?.rating || 1) * 20 + "%",
-                }}
-              ></div>
-            </div>
-          </div>
-        ))}
+      <div className="my-5">
+      <h2 className="text-xs">
+        {formData?.skills.map((skill: any) => skill.name).join(", ")}
+      </h2>
       </div>
     </div>
   );

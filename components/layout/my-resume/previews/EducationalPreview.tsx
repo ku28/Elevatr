@@ -6,7 +6,7 @@ const EducationalPreview = () => {
   const { formData } = useFormContext();
 
   return (
-    <div className="my-6">
+    <div className="my-6 mx-8">
       <h2
         className="text-left font-bold text-sm mb-2"
         style={{

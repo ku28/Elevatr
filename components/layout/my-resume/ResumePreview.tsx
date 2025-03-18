@@ -60,7 +60,7 @@ const ResumePreview = ({ download = false }) => {
       <div
         className={`${
           download ? "p-12" : "p-12"
-        }bg-white w-[210mm] min-h-[297mm] print:shadow-none`}
+        }bg-white w-[210mm] print:shadow-none`}
         style={{
           borderColor: formData?.themeColor || themeColors[0],
         }}
