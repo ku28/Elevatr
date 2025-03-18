@@ -13,7 +13,7 @@
      <b>Elevatr</b> is designed to make resume creation effortless. With the help of AI, users can generate, update, and customize their resumes, ensuring they stand out to potential employers. The application is secure, user-friendly, and highly customizable.
   </div>
   <br />
-  <a href="https://resume-ai-app.vercel.app/"><strong>➥ Visit Elevatr App</strong></a>
+  <a href="https://elevatr-resume.vercel.app/"><strong>➥ Visit Elevatr App</strong></a>
 </div>
 
 ## <a name="features">✨ Features</a>
