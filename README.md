@@ -1,9 +1,4 @@
 <div align="center">
-  <br />
-    <img src="https://i.postimg.cc/xnTr6TCb/Elevatr.png" alt="Project Banner">
-  <br />
-  <br />
-
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=393D72" alt="nextjs" />
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=1FAD58" alt="mongodb" />
