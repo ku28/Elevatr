@@ -43,6 +43,14 @@ export async function generateSummary(jobTitle: string) {
   return JSON.parse(result);
 }
 
+export async function generateInterviewQuestion(jobPosition: string, jobDesc: string, jobExperience: string) {
+  const prompt = `job position: ${jobPosition}, job description: ${jobDesc}, years of experience: ${jobExperience}. According to this information provide me with ${process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT} interview questions and their answers in json format`;
+
+  const result = await askGemini(prompt);
+
+  return JSON.parse(result);
+}
+
 export async function generateEducationDescription(educationInfo: string) {
   const prompt = `Based on my education at ${educationInfo}, provide personal descriptions for three levels of curriculum activities: High Activity, Medium Activity, and Low Activity. Each description should be 3-4 lines long and written from my perspective, reflecting on past experiences. The output should be an array of JSON objects, each containing 'activity_level' and 'description' fields. Please include a subtle hint about my good (but not the best) results.`;
 
