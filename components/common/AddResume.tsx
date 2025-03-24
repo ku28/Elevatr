@@ -114,9 +114,8 @@ const AddResume = ({ userId }: { userId: string | undefined }) => {
                       <Input
                         type="text"
                         placeholder="Example: Android Developer Resume"
-                        className={`no-focus ${
-                          form.formState.errors.name ? "error" : ""
-                        }`}
+                        className={`no-focus ${form.formState.errors.name ? "error" : ""
+                          }`}
                         autoComplete="off"
                         {...field}
                       />

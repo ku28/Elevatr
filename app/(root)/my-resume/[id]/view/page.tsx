@@ -7,11 +7,7 @@ import {
 } from "@/lib/actions/resume.actions";
 import { currentUser } from "@clerk/nextjs/server";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params, }: { params: { id: string };}): Promise<Metadata> {
   const data = await fetchResume(params.id);
   const resume = JSON.parse(data || "{}");
 

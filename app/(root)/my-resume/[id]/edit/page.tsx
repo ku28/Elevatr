@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import PageWrapper from "@/components/common/PageWrapper";
 import Header from "@/components/layout/Header";
 import { currentUser } from "@clerk/nextjs/server";
